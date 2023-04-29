@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 
-import ImgChunks from '../../assets';
 import { useGlobalContext } from '../../context/reducer';
+import ImgChunks from '../../index';
 import { getRandomIndexArray } from '../../utils/getRandomIndexArray';
 import Card from '../organism/Card';
 
