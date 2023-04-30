@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 
-import ImgChunks from '../../assets';
+import ImgChunks from '../../utils/imgChunks';
 import { useGlobalContext } from '../../context/reducer';
 import { getRandomIndexArray } from '../../utils/getRandomIndexArray';
 import Card from '../organism/Card';
@@ -41,6 +41,7 @@ const CardTemplate = () => {
   return (
     <StyledCardWrapper>
       {randomArray.map((x, index) => {
+        // ImgChunks[`IMG_${x}`]
         return <Card imgURL={ImgChunks[`IMG_${x}`]} key={index} index={index} />;
       })}
     </StyledCardWrapper>
