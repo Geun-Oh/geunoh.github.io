@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
 
+import ImgChunks from '../../assets';
 import { useGlobalContext } from '../../context/reducer';
-import ImgChunks from '../../index';
 import { getRandomIndexArray } from '../../utils/getRandomIndexArray';
 import Card from '../organism/Card';
 
@@ -50,7 +50,7 @@ const CardTemplate = () => {
 export default CardTemplate;
 
 const StyledCardWrapper = styled.main`
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
